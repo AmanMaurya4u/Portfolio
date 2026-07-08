@@ -1,25 +1,15 @@
-# My Portfolio Website - Overview 🚀
+# Aman Kumar Maurya - Portfolio Website 🚀
 
-This repository contains the open-source version of my personal portfolio website.  
-Feel free to explore the code and use it for learning and inspiration.
+This repository contains the personal portfolio website of **Aman Kumar Maurya** — Full-Stack Developer (.NET, C#, React.js) & GDG Hackathon 2026 Winner.
 
 ---
 
-## ⚠️ Usage Notice
+## 👨‍💻 About Aman Kumar Maurya
 
-This project is shared for learning purposes only.
-
-Please do NOT:
-- Clone or replicate the full website or design
-- Repost it with minor content changes
-- Use this project for commercial/client work
-- Create tutorials or content using this exact project
-
-If you use parts of the code, you must provide proper credit linking back to the original repository.
-
-Build your own version — don’t just copy.
-
-— Moncy Yohannan
+- **Education**: BCA (2023–2026) @ Shri Ram Swaroop Memorial University
+- **Experience**: .NET Intern @ Augurs Technologies, Lucknow
+- **Skills**: C#, ASP.NET MVC, Web API, Node.js, JavaScript, React.js, MySQL, MongoDB
+- **Achievements**: GDG Hackathon 2026 Winner, AWS Cloud Club Contributor
 
 ---
 

@@ -60,27 +60,22 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/AmanMaurya4u" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a href="https://linkedin.com/in/aman-maurya-b282412b4" target="_blank" rel="noreferrer">
             <FaLinkedinIn />
           </a>
         </span>
-        <span>
-          <a href="https://x.com" target="_blank">
-            <FaXTwitter />
-          </a>
-        </span>
-        <span>
-          <a href="https://www.instagram.com" target="_blank">
-            <FaInstagram />
-          </a>
-        </span>
       </div>
-      <a className="resume-button" href="#">
+      <a
+        className="resume-button"
+        href="https://drive.google.com/drive/folders/1o7WawR-nTQ8Hci2kqdXem3aSF44kS4Pi"
+        target="_blank"
+        rel="noreferrer"
+      >
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
