@@ -94,16 +94,10 @@ const WhatIDo = () => {
               <div className="what-content-flex">
                 <div className="what-tags">HTML5</div>
                 <div className="what-tags">CSS3</div>
-                <div className="what-tags">JavaScript (ES6+)</div>
-                <div className="what-tags">TypeScript</div>
                 <div className="what-tags">React.js</div>
                 <div className="what-tags">Next.js</div>
                 <div className="what-tags">Tailwind CSS</div>
                 <div className="what-tags">Vite</div>
-                <div className="what-tags">REST API Integration</div>
-                <div className="what-tags">Firebase</div>
-                <div className="what-tags">Git</div>
-                <div className="what-tags">GitHub</div>
                 <div className="what-tags">Figma to Code</div>
               </div>
               <div className="what-arrow"></div>
@@ -136,6 +130,11 @@ const WhatIDo = () => {
               </p>
               <h5>Technologies & Skills</h5>
               <div className="what-content-flex">
+                <div className="what-tags">.NET</div>
+                <div className="what-tags">C#</div>
+                <div className="what-tags">MVC</div>
+                <div className="what-tags">JavaScript </div>
+                <div className="what-tags">TypeScript</div>
                 <div className="what-tags">Node.js</div>
                 <div className="what-tags">MongoDB</div>
                 <div className="what-tags">MySQL</div>
