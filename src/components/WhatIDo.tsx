@@ -8,14 +8,11 @@ const WhatIDo = () => {
     containerRef.current[index] = el;
   };
   useEffect(() => {
-    if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.classList.remove("what-noTouch");
-          container.addEventListener("click", () => handleClick(container));
-        }
-      });
-    }
+    containerRef.current.forEach((container) => {
+      if (container) {
+        container.addEventListener("click", () => handleClick(container));
+      }
+    });
     return () => {
       containerRef.current.forEach((container) => {
         if (container) {
@@ -61,6 +58,7 @@ const WhatIDo = () => {
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 0)}
+            onClick={(e) => handleClick(e.currentTarget)}
           >
             <div className="what-border1">
               <svg height="100%">
@@ -87,22 +85,26 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOPMENT</h3>
+              <h3>FRONTEND DEVELOPMENT</h3>
               <h4>Description</h4>
               <p>
-                Building dynamic full-stack web applications and robust RESTful APIs using C#, ASP.NET MVC, Node.js, and React.js backed by MySQL and MongoDB databases.
+                Building modern, responsive, and high-performance user interfaces with clean code, smooth interactions, and exceptional user experience.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Technologies & Skills</h5>
               <div className="what-content-flex">
-                <div className="what-tags">C#</div>
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">ASP.NET MVC</div>
-                <div className="what-tags">Web API</div>
-                <div className="what-tags">Node.js</div>
+                <div className="what-tags">HTML5</div>
+                <div className="what-tags">CSS3</div>
+                <div className="what-tags">JavaScript (ES6+)</div>
+                <div className="what-tags">TypeScript</div>
                 <div className="what-tags">React.js</div>
-                <div className="what-tags">HTML5 & CSS3</div>
-                <div className="what-tags">MySQL</div>
-                <div className="what-tags">MongoDB</div>
+                <div className="what-tags">Next.js</div>
+                <div className="what-tags">Tailwind CSS</div>
+                <div className="what-tags">Vite</div>
+                <div className="what-tags">REST API Integration</div>
+                <div className="what-tags">Firebase</div>
+                <div className="what-tags">Git</div>
+                <div className="what-tags">GitHub</div>
+                <div className="what-tags">Figma to Code</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -110,6 +112,7 @@ const WhatIDo = () => {
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 1)}
+            onClick={(e) => handleClick(e.currentTarget)}
           >
             <div className="what-border1">
               <svg height="100%">
@@ -126,21 +129,29 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>CLOUD & TOOLS</h3>
+              <h3>BACKEND DEVELOPMENT</h3>
               <h4>Description</h4>
               <p>
-                Designing cloud-native integrations, working with version control ecosystems, and delivering high-performance software. Winner of GDG Hackathon 2026 and recognized by AWS Cloud Club.
+                Developing secure, scalable, and efficient backend systems with robust APIs, authentication, database management, and cloud deployment.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Technologies & Skills</h5>
               <div className="what-content-flex">
-                <div className="what-tags">AWS Cloud</div>
-                <div className="what-tags">Google Cloud</div>
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">MongoDB</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">REST API</div>
+                <div className="what-tags">Swagger</div>
+                <div className="what-tags">Postman</div>
+                <div className="what-tags">JWT Authentication</div>
+                <div className="what-tags">OAuth</div>
+                <div className="what-tags">Socket.IO</div>
                 <div className="what-tags">Firebase</div>
+                <div className="what-tags">Supabase</div>
+                <div className="what-tags">Razorpay Integration</div>
+                <div className="what-tags">Vercel</div>
                 <div className="what-tags">Git</div>
                 <div className="what-tags">GitHub</div>
-                <div className="what-tags">VS Code</div>
-                <div className="what-tags">Visual Studio</div>
-                <div className="what-tags">Windows OS</div>
               </div>
               <div className="what-arrow"></div>
             </div>
