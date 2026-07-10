@@ -1,4 +1,4 @@
-import { lazy, PropsWithChildren, Suspense, useEffect, useState } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 import About from "./About";
 import Career from "./Career";
 import Contact from "./Contact";
@@ -8,9 +8,9 @@ import Navbar from "./Navbar";
 import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
+import TechStack from "./TechStack";
 import setSplitText from "./utils/splitText";
-
-const TechStack = lazy(() => import("./TechStack"));
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -21,11 +21,16 @@ const MainContainer = ({ children }: PropsWithChildren) => {
     const resizeHandler = () => {
       setSplitText();
       setIsDesktopView(window.innerWidth > 1024);
+      ScrollTrigger.refresh();
     };
     resizeHandler();
     window.addEventListener("resize", resizeHandler);
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 500);
     return () => {
       window.removeEventListener("resize", resizeHandler);
+      clearTimeout(timer);
     };
   }, [isDesktopView]);
 
@@ -43,11 +48,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <WhatIDo />
             <Career />
             <Work />
-            {isDesktopView && (
-              <Suspense fallback={<div>Loading....</div>}>
-                <TechStack />
-              </Suspense>
-            )}
+            {isDesktopView && <TechStack />}
             <Contact />
           </div>
         </div>

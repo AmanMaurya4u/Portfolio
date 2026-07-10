@@ -95,9 +95,8 @@ body {
   width: 100%;
   position: relative;
   height: var(--vh);
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: -100px;
+  margin: 100px auto -100px auto;
+  clear: both;
 }
 
 .techstack h2 {
