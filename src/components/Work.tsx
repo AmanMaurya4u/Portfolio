@@ -8,7 +8,7 @@ gsap.registerPlugin(useGSAP);
 
 const projectsData = [
   {
-    title: "Notification System",
+    title: "---Divine Sync---",
     category: "Full-Stack Alert App",
     tools: "Node.js, Web API, JavaScript, React.js",
     image: "/images/placeholder.webp",
