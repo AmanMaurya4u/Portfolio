@@ -16,7 +16,6 @@ const imageUrls = [
   "/images/react2.webp",
   "/images/next2.webp",
   "/images/node2.webp",
-  "/images/express.webp",
   "/images/mongo.webp",
   "/images/mysql.webp",
   "/images/typescript.webp",
@@ -26,7 +25,46 @@ const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
-const spheres = [...Array(30)].map(() => ({
+function createTechCanvasTexture(title: string, color: string): THREE.CanvasTexture {
+  const canvas = document.createElement("canvas");
+  canvas.width = 512;
+  canvas.height = 512;
+  const ctx = canvas.getContext("2d")!;
+
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, 512, 512);
+
+  const centers = [128, 384];
+  centers.forEach((cx) => {
+    ctx.beginPath();
+    ctx.arc(cx, 256, 85, 0, Math.PI * 2);
+    ctx.fillStyle = color + "1A";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(cx, 256, 85, 0, Math.PI * 2);
+    ctx.lineWidth = 8;
+    ctx.strokeStyle = color;
+    ctx.stroke();
+
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillStyle = color;
+
+    if (title.length <= 3) {
+      ctx.font = "900 54px Arial, sans-serif";
+    } else {
+      ctx.font = "900 34px Arial, sans-serif";
+    }
+    ctx.fillText(title, cx, 256);
+  });
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.needsUpdate = true;
+  return texture;
+}
+
+const spheres = [...Array(38)].map(() => ({
   scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
 }));
 
@@ -152,7 +190,20 @@ const TechStack = () => {
     };
   }, []);
   const materials = useMemo(() => {
-    return textures.map(
+    const customTechs = [
+      { title: "HTML", color: "#E34F26" },
+      { title: "CSS", color: "#1572B6" },
+      { title: "C#", color: "#9B4F96" },
+      { title: "Postman", color: "#FF6C37" },
+    ];
+
+    const customTextures = customTechs.map((t) =>
+      createTechCanvasTexture(t.title, t.color)
+    );
+
+    const allTextures = [...textures, ...customTextures];
+
+    return allTextures.map(
       (texture) =>
         new THREE.MeshPhysicalMaterial({
           map: texture,

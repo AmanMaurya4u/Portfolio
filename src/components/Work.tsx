@@ -8,8 +8,14 @@ gsap.registerPlugin(useGSAP);
 
 const projectsData = [
   {
+    title: "Arun Electronics",
+    category: "Full-Stack Electronics Store",
+    tools: "React.js, Node.js, AI Assistant, E-Commerce",
+    image: "/images/Arun.png",
+  },
+  {
     title: "---Divine Sync---",
-    category: "Full-Stack Alert App",
+    category: "Full-Stack Name Counting Web",
     tools: "Node.js, Web API, JavaScript, React.js",
     image: "/images/placeholder.webp",
   },
