@@ -191,7 +191,7 @@ const TechStack = () => {
   }, []);
   const materials = useMemo(() => {
     const customTechs = [
-      { title: "HTML", color: "#E34F26" },
+      { title: "HTML", color: "#ff0e2aff" },
       { title: "CSS", color: "#1572B6" },
       { title: "C#", color: "#9B4F96" },
       { title: "Postman", color: "#FF6C37" },
