@@ -1,4 +1,4 @@
-# Aman Kumar Maurya - Portfolio Website 🚀.
+# Aman Kumar Maurya - Portfolio Website 🚀...
 
 This repository contains the personal portfolio website of **Aman Kumar Maurya** — Full-Stack Developer (.NET, C#, React.js) & GDG Hackathon 2026 Winner.
 
