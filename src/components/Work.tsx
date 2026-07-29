@@ -8,47 +8,29 @@ gsap.registerPlugin(useGSAP);
 
 const projectsData = [
   {
-    title: "Arun Electronics",
-    category: "Full-Stack Electronics Store",
-    tools: "React.js, Node.js, AI Assistant, E-Commerce",
-    image: "/images/Arun.png",
-  },
-  {
-    title: "---Divine Sync---",
-    category: "Full-Stack Name Counting Web",
-    tools: "Node.js, Web API, JavaScript, React.js",
+    title: "JanMitra AI",
+    category: "Government AI Grievance",
+    tools: "AI-powered citizen complaint management system",
     image: "/images/placeholder.webp",
   },
   {
-    title: "Grocery Online Store",
-    category: "E-Commerce Web Application",
-    tools: "ASP.NET MVC, C#, MySQL, Web API",
+    title: "Divin Sync",
+    category: "Spiritual Guidance Platform",
+    tools: "AI-powered platform for personalized spiritual guidance and devotional content",
     image: "/images/placeholder.webp",
   },
   {
-    title: "GDG Hackathon Solution",
-    category: "Winning Tech Solution",
-    tools: "React.js, Node.js, Cloud & Firebase",
+    title: "Notification System",
+    category: "Real-time Alert System",
+    tools: "A real-time user alert system",
     image: "/images/placeholder.webp",
   },
   {
-    title: "Cloud & Firebase Apps",
-    category: "Cloud Computing Projects",
-    tools: "AWS Cloud, Firebase, Full-Stack Web",
+    title: "Grocery",
+    category: "Online Grocery Platform",
+    tools: "An AI-powered online grocery platform",
     image: "/images/placeholder.webp",
-  },
-  {
-    title: "Enterprise Web API",
-    category: "Backend Architecture",
-    tools: "C#, ASP.NET MVC, MySQL, REST API",
-    image: "/images/placeholder.webp",
-  },
-  {
-    title: "Portfolio Web Application",
-    category: "Interactive Full-Stack Web",
-    tools: "React.js, Three.js, GSAP, CSS3",
-    image: "/images/placeholder.webp",
-  },
+  }
 ];
 
 const Work = () => {
