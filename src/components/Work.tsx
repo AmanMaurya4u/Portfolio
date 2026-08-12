@@ -11,7 +11,8 @@ const projectsData = [
     title: "JanMitra AI",
     category: "Government AI Grievance",
     tools: "AI-powered citizen complaint management system",
-    image: "/images/placeholder.webp",
+    image: "/images/janmitra-ai.png",
+    link: "https://jan-mintra-ai.vercel.app/",
   },
   {
     title: "Divin Sync",
@@ -93,14 +94,27 @@ const Work = () => {
                   <h3>0{index + 1}</h3>
 
                   <div>
-                    <h4>{project.title}</h4>
+                    <h4>
+                      {project.link ? (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "inherit", textDecoration: "none" }}
+                        >
+                          {project.title}
+                        </a>
+                      ) : (
+                        project.title
+                      )}
+                    </h4>
                     <p>{project.category}</p>
                   </div>
                 </div>
                 <h4>Tools and features</h4>
                 <p>{project.tools}</p>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
+              <WorkImage image={project.image} alt={project.title} link={project.link} />
             </div>
           ))}
         </div>
